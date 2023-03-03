@@ -1,0 +1,63 @@
+/* why are you here */
+* {
+  font-family: "Comic Sans MS", "Comic Sans";
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: large;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+}
+
+input[type="number"] {
+  width: 75px;
+  height: 20px;
+}
+
+.calculate-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+}
+
+button {
+  position: relative;
+  width: 315px;
+  height: 40px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#calculate {
+  background-color: rgb(255, 200, 0);
+}
+
+#calculate:hover {
+  background-color: rgb(226, 177, 0);
+}
+
+#calculate:active {
+  background-color: rgb(255, 210, 48);
+}

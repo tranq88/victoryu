@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>csc148 grade copeulator | victor yu</title>
+  </head>
+  <body>
+    <h1>csc148 grade copeulator</h1>
+    <h2>welcome to the copeulator!!!</h2>
+    <h3>get ready to cope</h3>
+
+    <div class="container">
+      <form id="form">
+        <table>
+          <tbody>
+            <tr>
+              <th>name</th>
+              <th>weight</th>
+              <th>grade (%)</th>
+            </tr>
+
+            <tr>
+              <td>assignment 1</td>
+              <td>10%</td>
+              <td><input type="number" id="a1" size="5" placeholder="80" /></td>
+            </tr>
+
+            <tr>
+              <td>assignment 2</td>
+              <td>10%</td>
+              <td><input type="number" id="a2" size="5" /></td>
+            </tr>
+
+            <tr>
+              <td>labs</td>
+              <td>7%</td>
+              <td><input type="number" id="labs" size="5" /></td>
+            </tr>
+
+            <tr>
+              <td>preps</td>
+              <td>8%</td>
+              <td><input type="number" id="preps" size="5" /></td>
+            </tr>
+
+            <tr>
+              <td>midterm 1</td>
+              <td>10%</td>
+              <td><input type="number" id="midterm1" size="5" /></td>
+            </tr>
+
+            <tr>
+              <td>midterm 2</td>
+              <td>10%</td>
+              <td><input type="number" id="midterm2" size="5" /></td>
+            </tr>
+
+            <tr>
+              <td>final exam</td>
+              <td>40%</td>
+              <td><input type="number" id="final" size="5" /></td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+    </div>
+
+    <div class="calculate-btn">
+      <button type="button" id="calculate" onclick="calculate()">
+        calculate
+      </button>
+    </div>
+
+    <div class="bottom">
+      <h2>leaving a blank means 0 so just put what u think u'll get!!</h2>
+    </div>
+
+    <h1 id="result"></h1>
+    <h3>saving grades in da browser coming soon!!!</h3>
+    <h3>also tell me if u find any bugs plz thx @tranq#0001</h3>
+
+    <script src="script.js"></script>
+  </body>
+</html>
