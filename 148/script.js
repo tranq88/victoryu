@@ -44,7 +44,7 @@ function calculate() {
     displayImg = "steamhappy.webp";
   }
 
-  displayResult.innerHTML = `your grade is: ${result}% <img id="result-img" style="vertical-align:middle" src="./assets/${displayImg}" />`;
+  displayResult.innerHTML = `your grade is: ${result}% <img id="result-img" style="vertical-align:middle" src="/assets/${displayImg}" />`;
 }
 
 function sumObjValues(obj) {
