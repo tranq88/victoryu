@@ -1,4 +1,22 @@
 // why are you here
+function loadSavedGrades() {
+  const elements = {
+    a1: document.getElementById("a1"),
+    a2: document.getElementById("a2"),
+    labs: document.getElementById("labs"),
+    preps: document.getElementById("preps"),
+    midterm1: document.getElementById("midterm1"),
+    midterm2: document.getElementById("midterm2"),
+    final: document.getElementById("final"),
+  };
+
+  const grades = JSON.parse(window.localStorage.getItem("grades"));
+
+  for (let key in elements) {
+    elements[key].value = grades[key];
+  }
+}
+
 function calculate() {
   const grades = {
     a1: Number(document.getElementById("a1").value),
@@ -19,6 +37,8 @@ function calculate() {
     midterm2: 10,
     final: 40,
   };
+
+  window.localStorage.setItem("grades", JSON.stringify(grades));
 
   // apply 5% float
   if (grades.midterm1 > grades.midterm2) {
