@@ -1,4 +1,3 @@
-/* why are you here */
 * {
   font-family: "Comic Sans MS", "Comic Sans";
 }
@@ -60,4 +59,11 @@ button {
 
 #calculate:active {
   background-color: rgb(255, 210, 48);
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: black;
 }
