@@ -5,7 +5,7 @@ function loadSavedGrades() {
     labs: document.getElementById("labs"),
     preps: document.getElementById("preps"),
     midterm1: document.getElementById("midterm1"),
-    // midterm2: document.getElementById("midterm2"),
+    midterm2: document.getElementById("midterm2"),
     final: document.getElementById("final"),
   };
 
@@ -23,33 +23,21 @@ function calculate() {
     labs: Number(document.getElementById("labs").value),
     preps: Number(document.getElementById("preps").value),
     midterm1: Number(document.getElementById("midterm1").value),
-    // midterm2: Number(document.getElementById("midterm2").value),
+    midterm2: Number(document.getElementById("midterm2").value),
     final: Number(document.getElementById("final").value),
   };
 
   const weightings = {
-    a1: 12,
-    a2: 12,
-    labs: 4,
-    preps: 8,
-    midterm1: 14,
-    // midterm2: 10,
-    final: 45,
+    a1: 15,
+    a2: 10,
+    labs: 8,
+    preps: 7,
+    midterm1: 10,
+    midterm2: 10,
+    final: 40,
   };
 
   window.localStorage.setItem("grades", JSON.stringify(grades));
-
-  // apply 5% float
-  // if (grades.midterm1 > grades.midterm2) {
-  //   weightings.midterm1 = 15;
-  // } else {
-  //   weightings.midterm2 = 15;
-  // }
-  if (grades.midterm1 > grades.final) {
-    weightings.midterm1 += 5;
-  } else {
-    weightings.final += 5;
-  }
 
   let weightedSum = 0;
   for (let key in grades) {
