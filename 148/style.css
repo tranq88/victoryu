@@ -67,3 +67,29 @@ a:hover,
 a:active {
   color: black;
 }
+
+.surverButton button {
+  background-color: rgb(255, 200, 0);
+  width: 100px;
+  height: 40px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.surveyButtons {
+  display: flex;
+  align-items: center;
+}
+
+.surveyButtons p {
+  margin-right: 10px;  
+}
+
+.surveyButtons label {
+  display: flex;
+  align-items: center;
+}
+
+.surveyButtons input[type="checkbox"] {
+  margin-right: 10px;  
+}
