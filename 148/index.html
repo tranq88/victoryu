@@ -8,6 +8,22 @@
     <title>csc148 grade calculator | victor yu</title>
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
   </head>
+
+  <!-- Google tag for Analytics (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-9M9K6G3GZM"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-9M9K6G3GZM");
+  </script>
+
   <body onload="loadSavedGrades()">
     <h1>csc148 (winter 2024) grade calculator</h1>
     <h2>welcome to the calculator!!!</h2>
@@ -74,13 +90,13 @@
         </table>
       </form>
       <div class="surveyButtons">
-        <p>surveys (0.5% each, 2% if all 3): </p>
+        <p>surveys (0.5% each, 2% if all 3):</p>
         <label for="survey 1">1</label>
-        <input type="checkbox" id="survey1"/>
+        <input type="checkbox" id="survey1" />
         <label for="survey 2">2</label>
-        <input type="checkbox" id="survey2"/>
+        <input type="checkbox" id="survey2" />
         <label for="survey 3">3</label>
-        <input type="checkbox" id="survey3"/>
+        <input type="checkbox" id="survey3" />
       </div>
     </div>
 
